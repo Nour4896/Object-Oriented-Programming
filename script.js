@@ -33,8 +33,8 @@ class PerishableProductProperties extends productProperties {
     }
 }
 
-let perishable1 = new perishableProductProperties('Yogurt', 4.75, 30, "2025/05/14")
-let perishable2 = new perishableProductProperties('Ribeye Steak', 18, 20, "2025/05/05")
+let perishable1 = new PerishableProductProperties('Yogurt', 4.75, 30, "2025/05/14")
+let perishable2 = new PerishableProductProperties('Ribeye Steak', 18, 20, "2025/05/05")
 
 console.log(perishable1.toString());
 console.log(perishable2.toString());
