@@ -62,7 +62,7 @@ class Store {
         let foundItem = null
         
         for (let i = 0; i < this.inventory.length; i++) {
-           if (name = this.inventory[i]) {
+           if (name == this.inventory[i].name) {
             foundItem = name
            }
         }
@@ -93,3 +93,9 @@ console.log("Total Inventory Value = $" + loblaws.getInventoryValue());
 ProductProperties.applyDiscounts(loblaws.inventory, .15)
 
 console.log("Total Inventory Value After 15% = $" + loblaws.getInventoryValue());
+
+//Find Item By Name - Found
+console.log(loblaws.findProductByName("Kraft Dinner"));
+
+//Find Item By Name - Not Found
+console.log(loblaws.findProductByName("Apple"));
