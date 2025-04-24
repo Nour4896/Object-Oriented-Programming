@@ -1,4 +1,4 @@
-class productProperties {
+class ProductProperties {
     constructor(name, price, quantity) {
         this.name = name;
         this.price = price;
@@ -22,7 +22,7 @@ class productProperties {
     }
 }
 
-class perishableProductProperties extends productProperties {
+class PerishableProductProperties extends productProperties {
     constructor(name, price, quantity, expirationDate) {
         super(name, price, quantity);
         this.expirationDate = expirationDate;
@@ -38,3 +38,9 @@ let perishable2 = new perishableProductProperties('Ribeye Steak', 18, 20, "2025/
 
 console.log(perishable1.toString());
 console.log(perishable2.toString());
+
+class Store {
+    constructor() {
+        this.inventory = []
+    }
+}
