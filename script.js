@@ -68,3 +68,6 @@ class Store {
 let product1 = new ProductProperties('Beans', 3, 50);
 let product2 = new ProductProperties('Crackers', 4, 80);
 let product3 = new ProductProperties('Kraft Dinner', 3.50, 200);
+
+let loblaws = new Store;
+
