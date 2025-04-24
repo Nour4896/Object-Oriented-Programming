@@ -22,10 +22,12 @@ class perishableProductProperties extends productProperties {
     }
 
     toString() {
-        return `Product: ${this.name}, Price: ${this.price}, Quantity: ${this.quantity}, Expiration: ${this.expirationDate}`
+        return `Product: ${this.name}, Price: $${this.price}, Quantity: ${this.quantity}, Expiration: ${this.expirationDate}`
     }
 }
 
 let perishable1 = new perishableProductProperties('Yogurt', 4.75, 30, "2025/05/14")
 let perishable2 = new perishableProductProperties('Ribeye Steak', 18, 20, "2025/05/05")
 
+console.log(perishable1.toString());
+console.log(perishable2.toString());
