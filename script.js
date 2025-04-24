@@ -8,8 +8,7 @@ class ProductProperties {
 
     static applyDiscounts(products, discount) {
         for (let i = 0; i < products.length; i++) {
-            products[i] = products[i] - (products[i] * discount);
-            return products[i];
+            products[i].price = products[i].price - (products[i].price * discount);
         }
     }
 
@@ -87,5 +86,10 @@ loblaws.addProduct(product1);
 loblaws.addProduct(product2);
 loblaws.addProduct(product3);
 
+//Print Total Inventory Value
 console.log("Total Inventory Value = $" + loblaws.getInventoryValue());
 
+//Print Value After Discount
+ProductProperties.applyDiscounts(loblaws.inventory, .15)
+
+console.log("Total Inventory Value After 15% = $" + loblaws.getInventoryValue());
