@@ -41,10 +41,17 @@ console.log(perishable2.toString());
 
 class Store {
     constructor() {
-        this.inventory = []
+        this.inventory = [];
     }
 
     addProduct(product) {
-        this.inventory.push(product)
+        this.inventory.push(product);
+    }
+
+    getInventoryValue() {
+        for (let i = 0; i < this.inventory.length; i++) {
+            inventoryValue += this.inventory[i];
+            return inventoryValue;
+        }
     }
 }
