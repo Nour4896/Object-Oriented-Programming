@@ -5,6 +5,13 @@ class productProperties {
         this.quantity = quantity;
     }
 
+    static applyDiscounts(products, discount) {
+        for (let i = 0; i < products.length; i++) {
+            products[i] = products[i] - (products[i] * discount);
+            return products[i];
+        }
+    }
+
     getTotalValue() {
         let totalValue = (price * quantity);
         return totalValue;
