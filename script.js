@@ -17,9 +17,7 @@ class productProperties {
 
 class perishableProductProperties extends productProperties {
     constructor(name, price, quantity, expirationDate) {
-        super(name);
-        super(price);
-        super(quantity);
+        super(name, price, quantity);
         this.expirationDate = expirationDate;
     }
 
@@ -30,3 +28,4 @@ class perishableProductProperties extends productProperties {
 
 let perishable1 = new perishableProductProperties('Yogurt', 4.75, 30, "2025/05/14")
 let perishable2 = new perishableProductProperties('Ribeye Steak', 18, 20, "2025/05/05")
+
