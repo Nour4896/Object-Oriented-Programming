@@ -54,4 +54,16 @@ class Store {
             return inventoryValue;
         }
     }
+
+    findProductByName(name) {
+        let foundItem = null
+        
+        for (let i = 0; i < this.inventory.length; i++) {
+           if (name = this.inventory[i]) {
+            foundItem = name
+           }
+        }
+
+        return foundItem
+    }
 }
