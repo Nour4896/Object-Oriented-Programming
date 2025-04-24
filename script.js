@@ -22,7 +22,7 @@ class ProductProperties {
     }
 }
 
-class PerishableProductProperties extends productProperties {
+class PerishableProductProperties extends ProductProperties {
     constructor(name, price, quantity, expirationDate) {
         super(name, price, quantity);
         this.expirationDate = expirationDate;
@@ -35,9 +35,6 @@ class PerishableProductProperties extends productProperties {
 
 let perishable1 = new PerishableProductProperties('Yogurt', 4.75, 30, "2025/05/14")
 let perishable2 = new PerishableProductProperties('Ribeye Steak', 18, 20, "2025/05/05")
-
-console.log(perishable1.toString());
-console.log(perishable2.toString());
 
 class Store {
     constructor() {
@@ -67,3 +64,7 @@ class Store {
         return foundItem
     }
 }
+
+let product1 = new ProductProperties('Beans', 3, 50);
+let product2 = new ProductProperties('Crackers', 4, 80);
+let product3 = new ProductProperties('Kraft Dinner', 3.50, 200);
