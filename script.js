@@ -71,3 +71,9 @@ let product3 = new ProductProperties('Kraft Dinner', 3.50, 200);
 
 let loblaws = new Store;
 
+loblaws.addProduct(perishable1);
+loblaws.addProduct(perishable2);
+loblaws.addProduct(product1);
+loblaws.addProduct(product2);
+loblaws.addProduct(product3);
+
