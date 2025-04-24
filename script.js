@@ -50,10 +50,13 @@ class Store {
     }
 
     getInventoryValue() {
+        let inventoryValue = 0        
+        
         for (let i = 0; i < this.inventory.length; i++) {
-            inventoryValue += this.inventory[i];
-            return inventoryValue;
+            let productValue = this.inventory[i].price * this.inventory[i].quantity;
+            inventoryValue += productValue;
         }
+        return inventoryValue;
     }
 
     findProductByName(name) {
@@ -83,4 +86,6 @@ loblaws.addProduct(perishable2);
 loblaws.addProduct(product1);
 loblaws.addProduct(product2);
 loblaws.addProduct(product3);
+
+console.log("Total Inventory Value = $" + loblaws.getInventoryValue());
 
